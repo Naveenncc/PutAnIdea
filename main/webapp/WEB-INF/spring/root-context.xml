@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	
+    
+    	<!-- Root Context: defines shared resources visible to all other web components -->
+ <context:annotation-config/>
+ <context:component-scan base-package="com.learning.*"/>
+ <!-- Dao referenced beans -->
+<bean id="loginDao" class="com.learning.daoimpl.LoginDaoImpl"></bean>
+<bean id="solrDao" class="com.learning.daoimpl.SolrDaoImpl"></bean>
+<bean id="ideaViewDao" class="com.learning.daoimpl.IdeaViewDaoImpl"></bean>
+
+
+<!-- Service referenced beans -->		
+<bean id="loginService" class="com.learning.serviceimpl.LoginServiceImpl"></bean>	
+<bean id="ideaSolrResultService" class="com.learning.serviceimpl.IdeaSolrResultServiceImpl"></bean>
+<bean id="ideaViewService" class="com.learning.serviceimpl.IdeaViewServiceImpl"></bean>	
+
+
+<!-- other referenced beans -->
+<bean id="ideaSolrDocumentFactory" class="com.learning.solr.IdeaSolrDocumentFactory"></bean>
+<bean id="ideaIndexer" class="com.learning.solr.IdeaIndexer"></bean>
+<bean id="ideaSolrQueryConvertor" class="com.learning.solr.IdeaSolrQueryConvertor"></bean>
+</beans>

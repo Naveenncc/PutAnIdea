@@ -1,0 +1,375 @@
+	.textblue {
+    color: blue;
+        text-decoration: none;
+}
+.textheadinggen {
+	color: blue;
+        text-decoration: none;
+            font-family: sans-serif;
+    font-size: large;
+}
+.adminbutton {
+position: absolute;
+    top: 200px;
+    left: 380px;
+    width: 230px;
+    height: 60px;
+    background-color: cadetblue;
+}
+.headerbar {
+	position: absolute;
+    background-color: #F4F0F9;
+    height: 50px;
+    width: 96%;
+    box-shadow: 5px 5px 5px #D45353;
+    align-self: center;
+    left: 23px;
+    z-index: 1;
+}
+.logoimage {
+	    width: 100px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    box-shadow: 5px 5px 5px #D45353;
+}
+.useraccountdiv {
+	position: absolute;
+    left: 79%;
+    top: 50%;
+}
+.username {
+	position: absolute;
+    left: 30px;
+    top: 4px;
+}
+.accounticonimg {
+	    position: absolute;
+    width: 25px;
+}
+#singledropdownelement {
+    position: absolute;
+    top: 33px;
+    border-style: solid;
+    border-width: thick thin thin;
+    border-bottom-width: medium;
+    border-left-style: ridge;
+    border-top-color: #DB7878;
+    border-bottom-color: #DB7878;
+    border-right-style: ridge;
+    width: 170px;
+    text-align: center;
+    left: -50px;
+}
+.reglogin {
+	color:blue;
+	cursor: pointer;
+}
+.searchicon {
+position: absolute;
+    left: 300px;
+    top: 20px;
+}
+.hiddensearch img{
+    height: 35px;
+    position: absolute;
+}
+
+.hiddensearch {
+position: absolute;
+    top: 10%;
+    left: 45%;
+    z-index: 1;
+}
+.hiddensearch input{
+width: 330px;
+    height: 35px;
+}
+.backlayout {
+	    background-color: dimgrey;
+}
+.mainlayout {
+	        background-color: whitesmoke;
+    width: 74%;
+    left: 13%;
+    top: 9.5%;
+    position: absolute;
+    height: auto;
+    overflow: auto;
+}
+.loginmodal {
+	    position: absolute;
+    border-style: solid;
+    border-color: chocolate;
+    height: 362px;
+    width: 500;
+    text-align: center;
+    left: 288px;
+    top: 125px;
+    box-shadow: 0 0 1em rgb(5,9,2);
+}
+.text-cursive {
+	    font-family: cursive;
+    font-size: x-large;
+    text-align: start;
+    line-height: 3;
+}
+.submit-button {
+background-color: cadetblue;
+    width: 175px;
+    height: 35px;
+	}
+.table {
+	        position: absolute;
+    left: 85px;
+    top: 40px;
+}
+#my_popup {
+    background-color: white;
+    top: 17px;
+    height: 500px;
+    width: 473px;
+    box-shadow: 0 0 1em rgb(202, 52, 18);
+    }
+ #login_popup{
+ background-color: white;
+    top: 17px;
+    height: 362px;
+    width: 500;
+    box-shadow: 0 0 1em rgb(202, 52, 18);
+ }
+ #edit_popup {
+    background-color: white;
+    top: 17px;
+    height: 500px;
+    width: 473px;
+    box-shadow: 0 0 1em rgb(202, 52, 18);
+    }
+ #addanidea_popup {
+    background-color: white;
+    top: 17px;
+    height: 500px;
+    width: 800px;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    }
+    
+ .register {
+    line-height: 2;
+    font-size: 18px;
+    }
+ .popup_heading {
+ text-align: center;
+ margin-top: 25px;
+ }
+.heading {
+      font-family: sans-serif;
+    font-size: 30px;
+    color: blue;
+  }
+.registertable{
+position: absolute;
+    left: 80px;
+    top: 70px;
+}
+.error {
+	color: red;
+}
+.smallerrorfont {
+	    font-size: 14px;
+}
+.leftnavigation {
+	box-shadow: 5px 5px 5px #777474;
+    width: 30%;
+    float: left;
+    height: 650px;
+}
+.homepagebody {
+    
+   height: auto;
+    width: 70%;
+    float: right;
+}
+.searchresults{
+	/* border-style: solid; */
+	    height: 100%;
+    width: 100%;
+}
+.nosearchresults{
+	position: initial;
+    /* border-style: solid; */
+    height: 10%;
+    margin-top: 8%;
+    text-align: center;
+   width: 100%;
+    left: 7%;
+}
+.singlesearchresult{
+	    position: relative;
+     border-style: solid; 
+    margin-top: 2%;
+    height: 12%;
+    width: 87%;
+    left: 7%;
+    box-shadow: 0px 2px 4px #4E4B4E;
+    background-color: white;
+    border-color: #8E8C8A;
+    border-width: thin;
+        overflow: hidden;
+    max-height: 95px;
+}
+.singleideadiv {
+    /* border-style: solid; */
+    width: 78%;
+    height: 100%;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+        float: left;
+}
+.singleuserfldiv {
+    /* border-style: solid; */
+    width: 22%;
+    left: 78%;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    position: absolute;
+    height: 100%;
+}
+.ideaviewheader {
+	 position: initial;
+    width: 100%;
+    height: 35px;
+    margin-top: 7%;
+}
+.ideaviewheading {
+	position: relative;
+    width: 86%;
+    left: 7%;
+    min-height: 5%;
+    height: auto;
+}
+.ideaviewheading span {
+	    color: blue;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-size: large;
+}
+.ideaviewquestion {
+	position: relative;
+    width: 78%;
+    left: 11%;
+    max-height: 45%;
+    overflow: auto;
+    text-align: -webkit-auto;
+        min-height: 110px;
+            background-color: white;
+    margin-top: 23px;
+}
+.suggestionviewdisplay span{
+    position: relative;
+    left: 7%;
+    color: blue;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-size: large;
+}
+.singlesuggestiontext {
+	position: relative;
+    width: 78%;
+    left: 11%;
+    max-height: 45%;
+    overflow: auto;
+    text-align: -webkit-auto;
+    background-color: white;
+        min-height: 60px;
+}
+.singlesuggestionfldiv {
+	position: relative;
+    width: 1px;
+    left: 76%;
+    height: 55px;
+    padding-right: 87px;
+}
+.singleideaviewsuggestion {
+	margin-top: 15px;
+}
+.profileimagecontainer {
+	padding-left: 40px;
+    padding-top: 25px;
+}
+.profileimage {
+	width: 225px;
+    height: 225px;
+}
+.editimage {
+	padding-left: 110px;
+}
+.addanidea {
+	padding-left: 90px;
+    font-size: 22px;
+    padding-top: 40px;
+    color: blue;
+    cursor: pointer;
+}
+.addsuggestion {
+	position: relative;
+    left: 11%;
+}
+.addsuggestionheading {
+	color: blue;
+	font-family: sans-serif;
+    text-transform: capitalize;
+}
+.footerstyle {
+	height: 100%;
+}
+.suggestionsubmit {
+	    left: 52%;
+    position: relative;
+}
+.addanideaheading {
+	margin-top: 18px;
+    margin-left: 75px;
+}
+.addanideabody {
+	margin-top: 0px;
+    margin-left: 75px
+}
+.addanideasubmit {
+	margin-left: 550px;
+}
+.selectcategorydiv {
+	    margin-top: 18px;
+    margin-left: 550px;
+}
+.selectcategoryselect {
+	width: 175px;
+    height: 37px;
+    border-color: darkgrey;
+}
+.suggestiontextboxsizediv {
+	margin-left: 425px;
+    font-size: 14px;
+    margin-top: 12px;
+}
+.addanideatextboxsizediv {
+	margin-left: 510px;
+    font-size: 14px;
+    margin-top: 12px;
+}
+.addanideaheadingtextboxsizediv{
+	margin-left: 510px;
+    font-size: 14px;
+    margin-top: 12px;
+}
+.flexslidercustom {
+	    margin-top: 60px;
+    width: 560px;
+    margin-left: 70px;
+}
