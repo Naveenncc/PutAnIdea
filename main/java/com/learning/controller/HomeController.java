@@ -1,3 +1,11 @@
+/*
+ * This is the property of Mr.Naveen C C
+ * The code may not be copied, translated or distributed
+ * in any manner (electronic, web or printed) without the prior written
+ * consent of Naveen C C, with the exception of properly-attributed
+ * quotations and other "fair use" exemptions provided for under copyright law
+ * Copyright © 2016 Naveen C C. All rights reserved.
+ */
 package com.learning.controller;
 
 import javax.servlet.http.HttpServletRequest;
@@ -25,12 +33,23 @@ import com.learning.service.LoginService;
 public class HomeController
 {
 
+	/** The Constant logger. */
 	private static final Logger logger = LoggerFactory
 			.getLogger(HomeController.class);
 
+	/** The login service. */
 	@Autowired
 	private LoginService loginService;
 
+	/**
+	 * Check email.
+	 *
+	 * @param email
+	 *            the email
+	 * @param model
+	 *            the model
+	 * @return the string
+	 */
 	@RequestMapping(
 			value = "/checkemail", method = RequestMethod.GET)
 	public @ResponseBody String checkEmail(@RequestParam(
@@ -49,6 +68,17 @@ public class HomeController
 		}
 	}
 
+	/**
+	 * Do login.
+	 *
+	 * @param userName
+	 *            the user name
+	 * @param model
+	 *            the model
+	 * @param session
+	 *            the session
+	 * @return the string
+	 */
 	@RequestMapping(
 			value = "/login", method = RequestMethod.GET)
 	public String doLogin(@RequestParam(
@@ -66,6 +96,17 @@ public class HomeController
 		return "homepage";
 	}
 
+	/**
+	 * Do register.
+	 *
+	 * @param registerFormData
+	 *            the register form data
+	 * @param model
+	 *            the model
+	 * @param session
+	 *            the session
+	 * @return the string
+	 */
 	@RequestMapping(
 			value = "/register", method = RequestMethod.POST)
 	public String doRegister(RegisterFormData registerFormData, Model model,
@@ -84,6 +125,19 @@ public class HomeController
 		}
 	}
 
+	/**
+	 * Edits the profile.
+	 *
+	 * @param image
+	 *            the image
+	 * @param model
+	 *            the model
+	 * @param session
+	 *            the session
+	 * @param request
+	 *            the request
+	 * @return the string
+	 */
 	@RequestMapping(
 			value = "/editprofileimagevalidation", method = RequestMethod.POST)
 	public String editProfile(EditProfileData image, Model model,
@@ -107,6 +161,12 @@ public class HomeController
 
 	/**
 	 * Simply selects the home view to render by returning its name.
+	 *
+	 * @param model
+	 *            the model
+	 * @param session
+	 *            the session
+	 * @return the string
 	 */
 	@RequestMapping(
 			value = "/", method = RequestMethod.GET)
@@ -116,6 +176,15 @@ public class HomeController
 		return "homepage";
 	}
 
+	/**
+	 * Logout.
+	 *
+	 * @param model
+	 *            the model
+	 * @param session
+	 *            the session
+	 * @return the string
+	 */
 	@RequestMapping(
 			value = "/logout", method = RequestMethod.GET)
 	public String logout(Model model, HttpSession session)
@@ -125,6 +194,17 @@ public class HomeController
 		return "homepage";
 	}
 
+	/**
+	 * User login.
+	 *
+	 * @param loginData
+	 *            the login data
+	 * @param model
+	 *            the model
+	 * @param session
+	 *            the session
+	 * @return the string
+	 */
 	@RequestMapping(
 			value = "/userLogin", method = RequestMethod.POST)
 	public String userLogin(LoginData loginData, Model model,
@@ -144,6 +224,17 @@ public class HomeController
 		}
 	}
 
+	/**
+	 * Verify user.
+	 *
+	 * @param loginData
+	 *            the login data
+	 * @param model
+	 *            the model
+	 * @param session
+	 *            the session
+	 * @return the string
+	 */
 	@RequestMapping(
 			value = "/verifyuser", method = RequestMethod.POST)
 	public @ResponseBody String verifyUser(LoginData loginData, Model model,

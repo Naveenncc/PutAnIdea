@@ -1,3 +1,11 @@
+/*
+ * This is the property of Mr.Naveen C C
+ * The code may not be copied, translated or distributed
+ * in any manner (electronic, web or printed) without the prior written
+ * consent of Naveen C C, with the exception of properly-attributed
+ * quotations and other "fair use" exemptions provided for under copyright law
+ * Copyright © 2016 Naveen C C. All rights reserved.
+ */
 package com.learning.serviceimpl;
 
 import java.io.File;
@@ -14,16 +22,27 @@ import com.learining.data.RegisterFormData;
 import com.learning.dao.LoginDao;
 import com.learning.service.LoginService;
 
+/**
+ * The Class LoginServiceImpl handles login related operation and email
+ * validation.
+ */
 @Component
 public class LoginServiceImpl implements LoginService
 {
 
+	/** The logindao. */
 	@Autowired
 	private LoginDao logindao;
 
+	/** The request. */
 	@Autowired
 	private HttpServletRequest request;
 
+	/*
+	 * (non-Javadoc)
+	 *
+	 * @see com.learning.service.LoginService#checkEmail(java.lang.String)
+	 */
 	@Override
 	public boolean checkEmail(String email)
 	{
@@ -31,12 +50,23 @@ public class LoginServiceImpl implements LoginService
 		return logindao.checkEmail(email);
 	}
 
+	/*
+	 * (non-Javadoc)
+	 *
+	 * @see com.learning.service.LoginService#getUserData(java.lang.String)
+	 */
 	@Override
 	public RegisterFormData getUserData(String email)
 	{
 		return logindao.getUserData(email);
 	}
 
+	/*
+	 * (non-Javadoc)
+	 *
+	 * @see com.learning.service.LoginService#register(com.learining.data.
+	 * RegisterFormData)
+	 */
 	@Override
 	public boolean register(RegisterFormData registerFormData)
 	{
@@ -46,6 +76,12 @@ public class LoginServiceImpl implements LoginService
 		return registerFlag;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 *
+	 * @see com.learning.service.LoginService#updateProfile(com.learining.data.
+	 * EditProfileData, java.lang.String)
+	 */
 	@Override
 	public boolean updateProfile(EditProfileData editProfileData, String email)
 	{
@@ -87,6 +123,13 @@ public class LoginServiceImpl implements LoginService
 		return updateFlag;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 *
+	 * @see
+	 * com.learning.service.LoginService#verifyUser(com.learining.data.LoginData
+	 * )
+	 */
 	@Override
 	public boolean verifyUser(LoginData loginData)
 	{
